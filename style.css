@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: auto;
+  width: 50%;
+  padding-top: 25px;
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 50px;
+  height: 100px;
+}
+header .logo {
+  border-radius: 10px;
+  width: 75px;
+  aspect-ratio: 1;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.nav-menu {
+  display: flex;
+  column-gap: 20px;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+/* main */
+
+/* About me */
+.about-me {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  column-gap: 50px;
+  margin-bottom: 50px;
+}
+.about-me-info {
+  width: 50%;
+}
+.about-me-info h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.about-me-info p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+.about-me-info p:last-child {
+  margin: 0;
+}
+
+.about-me-photo img {
+  width: 500px;
+  aspect-ratio: 1;
+  border-radius: 30px;
+}
+/* projects */
+.projects {
+  margin-bottom: 50px;
+}
+.projects h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+.projects .projects-list {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-size: 1.5rem;
+}
+.projects .projects-item {
+  list-style-type: none;
+}
+.projects .projects-link {
+  color: black;
+  text-decoration: none;
+}
+.projects .projects-link:hover {
+  text-decoration: underline;
+}
