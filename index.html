@@ -9,32 +9,37 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="index.js" defer></script>
   </head>
-  <body>
+  <body class="">
     <header>
       <img src="img/image.png" alt="logo-me" class="logo" />
+      <div class="bulb">
+        <i class="bx bxs-bulb bulb-icon" id="bulb"></i>
+      </div>
       <nav>
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#" class="nav-link">About Me</a>
+            <a href="#about-me" class="nav-link">About Me</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Projects</a>
+            <a href="#projects" class="nav-link">Projects</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Skills</a>
+            <a href="#skills" class="nav-link">Skills</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="about-me">
+      <section id="about-me" class="about-me">
         <article class="about-me-info">
           <h2 class="about-me-info-title">About Me</h2>
           <p>
+            <span id="born-date">born ? </span>
             I was a Serbian-American engineer, futurist, and inventor. He is
             known for his contributions to the design of the modern alternating
             current (AC) electricity supply system.
@@ -52,13 +57,16 @@
             conducted a range of experiments with mechanical
             oscillators/generators, electrical discharge tubes, and early X-ray
             imaging.
+            <a href="https://en.wikipedia.org/wiki/Nikola_Tesla" target="_blank"
+              >Reed more about me</a
+            >
           </p>
         </article>
         <article class="about-me-photo">
           <img src="img/nikola.png" alt="Nikola Tesla" />
         </article>
       </section>
-      <section class="projects">
+      <section id="projects" class="projects">
         <h2 class="projects-title">Projects</h2>
         <ul class="projects-list">
           <li class="projects-item">
@@ -75,7 +83,7 @@
           </li>
         </ul>
       </section>
-      <section class="skills">
+      <section id="skills" class="skills">
         <h2 class="skills-title">Skills</h2>
         <div class="skills-icons">
           <div class="icon"><i class="bx bxl-html5"></i></div>
@@ -89,6 +97,12 @@
           <div class="icon"><i class="bx bx-terminal"></i></div>
           <div class="icon"><i class="bx bxs-universal-access"></i></div>
         </div>
+      </section>
+      <section id="contact" class="contact">
+        <h2 class="contact-title">Contact</h2>
+        <address>
+          Email: <a href="mailto:tesla@gmail.com">tesla@gmail.com</a>
+        </address>
       </section>
     </main>
     <footer>Made with ♥ in Serbian</footer>
