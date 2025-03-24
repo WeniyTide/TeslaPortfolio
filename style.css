@@ -22,7 +22,8 @@ header {
   align-items: center;
   justify-content: space-between;
   column-gap: 50px;
-  height: 100px;
+  /* height: 100px; */
+  margin-bottom: 50px;
 }
 header .logo {
   border-radius: 10px;
@@ -57,7 +58,7 @@ nav {
   margin-bottom: 50px;
 }
 .about-me-info {
-  width: 50%;
+  /* width: 70%; */
 }
 .about-me-info h2 {
   margin-bottom: 20px;
@@ -72,7 +73,7 @@ nav {
 }
 
 .about-me-photo img {
-  width: 500px;
+  width: 400px;
   aspect-ratio: 1;
   border-radius: 30px;
 }
@@ -99,4 +100,56 @@ nav {
 }
 .projects .projects-link:hover {
   text-decoration: underline;
+}
+.skills-title {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.skills-icons {
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+footer {
+  text-align: center;
+}
+@media screen and (max-width: 1600px) {
+  .about-me-photo img {
+    width: 300px;
+  }
+  .about-me {
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    column-gap: 20px;
+    margin-bottom: 50px;
+  }
+  body {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .about-me {
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    column-gap: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .about-me-info p:last-child {
+    margin: 20px;
+  }
+  header {
+    column-gap: 10px;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  body {
+    width: 75%;
+  }
+  .skills-icons {
+    flex-wrap: wrap;
+  }
 }
