@@ -1,6 +1,5 @@
 const bulb = document.getElementById('bulb');
 const body = document.querySelector('body');
-const born = document.getElementById('born-date');
 
 function changeBackground() {
   if (bulb.style.color === 'black') {
@@ -13,9 +12,3 @@ function changeBackground() {
 }
 
 bulb.addEventListener('click', changeBackground);
-
-// function changeDate() {
-//   let now = new Date();
-//   born.innerHTML = now.getDate();
-// }
-// setInterval(changeDate(), 1000);
